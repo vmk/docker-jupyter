@@ -13,7 +13,7 @@ RUN cd /home/jovyan/work && \
     wget -O notebook_data.zip https://www.dropbox.com/sh/hln1oqxqbhux51e/AAA8AA6CONohR2_GvarRby7Ra?dl=1 && \
     unzip notebook_data.zip; exit 0 
 
-RUN /bin/bash source activate python2 && \
+RUN . activate python2 && \
     conda install nltk
     
 RUN cd /home/jovyan/work && \
@@ -21,5 +21,5 @@ RUN cd /home/jovyan/work && \
 
 USER root
 
-RUN /bin/bash source activate python2 && \
+RUN . activate python2 && \
     python -m nltk.downloader -d /usr/local/share/nltk_data all
