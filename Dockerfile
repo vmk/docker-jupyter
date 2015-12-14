@@ -19,6 +19,7 @@ RUN cd /home/jovyan/work && \
 # Install Python 2 packages
 RUN conda install --name python2 \
     'nltk=3.1*' \
+    'statsmodels=0.6*'\
     && conda clean -yt
 
 USER root
