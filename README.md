@@ -1,2 +1,2 @@
 # docker-jupyter
-Modified Jupyter environment in a container.
+Modified Jupyter environments for use with Docker.
